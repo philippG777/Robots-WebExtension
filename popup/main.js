@@ -35,6 +35,7 @@ function fetchRobotsTxt(url) {
             log(res);
             if(res.status == 200)
                 res.text().then(showRobotsTxt);
+            else "We load 'robots.txt' failed,statusCode is " + res.status
         });
 }
 
